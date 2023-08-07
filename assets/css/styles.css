@@ -1,0 +1,49 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#main {}
+
+#header {
+  height: 99px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 10px 0 rgba(204, 204, 204, .5);
+}
+
+#nav {
+
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  color: #433246;
+  text-decoration: none;
+  line-height: 99px;
+  padding: 0 18px;
+  display: inline-block;
+}
+
+#nav li:hover a {
+  color: #c01111;
+}
+
+#video {}
+
+#content {}
+
+#footer {}
