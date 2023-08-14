@@ -13,6 +13,10 @@ body {
   background-color: aliceblue;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #header {
   background-color: #fff;
   position: fixed;
@@ -312,9 +316,137 @@ body {
   color: #c01111;
 }
 
+.service-card__btn--left:hover {
+  background-color: #2b3441;
+  color: #fff;
+}
+
 .service-card__btn--right {
   background-color: #2b3441;
   color: #fff;
+}
+
+.service-card__btn--right:hover {
+  background-color: #c01111;
+  color: #fff;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-container__left > h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 80px;
+  margin: 50px 0;
+}
+
+.project-counter{
+  display: flex;
+  margin: 50px 0;
+}
+
+.project-counter__number{
+  /* line-height: 2rem; */
+  color: #c01111;
+  font-size: 112px;
+  font-weight: 700;
+  /* line-height: 1.2; */
+}
+
+.project-counter__char {
+  /* display: flex; */
+}
+
+.project-counter__char__plus {
+  color: #c01111;
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.project-counter__char__desc {
+  font-size: 24px;
+  position: relative;
+  padding-left: 30px;
+  line-height: 2;
+}
+
+.project__slide-container {
+  margin-top: 90px;
+  width: 322px;
+  height: 469px;
+  background-color: antiquewhite;
+  position: relative;
+  background-image: url("https://sun-asterisk.vn/wp-content/uploads/2021/03/zenkigen_01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: blur(8px); */
+}
+
+.project__slide {
+  position: absolute;
+  bottom: 0;
+  padding: 24px;
+}
+
+.project__slide__company {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.project__slide__name {
+  margin: 10px 0 15px 0;
+}
+
+.project__slide__name > a {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(43, 52, 65);
+}
+
+.project__slide__name > a:hover {
+  color: rgb(192, 17, 17);
+}
+
+.project__slide__desc {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.project__slide__details {
+  color:rgb(192, 17, 17);
+  text-decoration: none;
+}
+
+.project__slide__details > span {
+  margin-left: 10px;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background-color: rgba(192, 17, 17, 0.1);
+}
+
+.project__controller-container {
+  margin-top: 2rem;
+  float: right;
+}
+
+.project__controller-container > a {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 100%;
+  background-color: #ddd;
 }
 
 #footer {}
