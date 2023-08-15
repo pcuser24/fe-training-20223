@@ -158,6 +158,7 @@ ul {
 
 .container {
   max-width: 1140px;
+  margin-bottom: 120px;
 }
 
 .container::before {
@@ -447,6 +448,139 @@ ul {
   padding: 1rem;
   border-radius: 100%;
   background-color: #ddd;
+}
+
+.career-container {
+  position: relative;
+  background-image: url("https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg");
+  padding: 0 5%;
+  border-radius: 16px;
+  line-height: 1.8;
+}
+
+.career-container div {
+  text-align: center;
+  color: #fff;
+}
+
+.career-container::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(192,17,17,.9);
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.career-container::after {
+  content: '';
+  position: absolute;
+  background-color: #ef3f45;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  top: 75px;
+  left: 75px;
+  z-index: 0;
+}
+
+.career-intro__body {
+  position: relative;
+  z-index: 10;
+}
+
+.career-intro__subtitle {
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  padding-top: 100px;
+}
+
+.career-intro__title {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+  margin-bottom: 80px;
+}
+
+.career-intro__desc {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin-bottom: 30px;
+}
+
+.career-intro__subdesc {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 43.2px; 
+}
+
+.career-intro__subdesc p {
+  margin: 0 0 10px;
+}
+
+.career-intro__btn-wrap {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.career-intro__btn-wrap a {
+  display: block;
+  width: 406px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(192,17,17,.1);
+  line-height: 22px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+  color: #c01111;
+}
+
+.arrow-icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.arrow-right {
+  -webkit-mask-image: url(	https://sun-asterisk.vn/wp-content/themes/starter/assets/images/icon-arrow-right.svg);
+  mask-image: url(https://sun-asterisk.vn/wp-content/themes/starter/assets/images/icon-arrow-right.svg);
+  width: 13.12px;
+  height: 10px;
+}
+
+.career-intro__btn-wrap a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transform: scale3d(.7,1,1);
+  transform: scale3d(.7,1,1);
+  transition: opacity .4s,-webkit-transform .4s;
+  transition: transform .4s,opacity .4s;
+  transition: transform .4s,opacity .4s,-webkit-transform .4s;
+  transition-timing-function: cubic-bezier(.2,1,.3,1);
 }
 
 #footer {}
