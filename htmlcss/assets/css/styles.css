@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  background-color: aliceblue;
 }
 
 ul {
@@ -70,6 +69,23 @@ ul {
 
 .header__items a:hover {
   color: rgb(192, 17, 17);
+}
+
+.header__items__nav__list{
+  display: none !important;
+}
+
+.header__items__nav__icon{
+  display: flex !important;
+}
+
+@media screen and (min-width: 992px) {
+  .header__items__nav__list{
+    display: flex !important;
+  }
+  .header__items__nav__icon {
+    display: none !important;
+  }
 }
 
 .header__items__lang {
@@ -212,11 +228,19 @@ ul {
 
 .service-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 128px;
   margin-bottom: 40px;
   height: 437.969px
+}
+
+@media screen and (min-width: 992px) {
+  .service-container {
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .service-container>div {
@@ -332,8 +356,14 @@ ul {
 
 .project-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 992px) {
+  .project-container {
+    flex-direction: row;
+  }
 }
 
 .project-container__left>h2 {
